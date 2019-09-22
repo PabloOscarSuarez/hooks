@@ -6,6 +6,7 @@ import { store } from "./redux/store";
 
 import Home from "./pages/Home/index";
 import Results from "./pages/Results";
+import MovieDetail from "./components/movieDetail";
 
 const App = () => (
   <Provider store={store}>
@@ -13,6 +14,7 @@ const App = () => (
       <div>
         <Route exact path="/" component={Home} />
         <Route path="/results" component={Results} />
+        <Route path="/detail/:id" component={MovieDetail} />
       </div>
     </Router>
   </Provider>

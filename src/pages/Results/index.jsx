@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 import { searchMovie } from "../../redux/actions/search";
 import { isSearchingLoading, movieResults } from "../../redux/selectors/index";
-import MovieResult from "../../components/MovieResults";
+import MovieResult from "../../components/MovieResults/MovieResults";
 
 export default ({ location }) => {
   const dispatch = useDispatch();
